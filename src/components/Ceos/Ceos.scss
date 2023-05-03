@@ -1,0 +1,58 @@
+@import '../../variables/style.scss';
+
+.ceos-w{
+    padding: 45px 65px;
+    border-radius: 10px;
+    background-color: $background_color;
+    margin-bottom: 0;
+    height: 410px;
+    .ceos-mr{
+        margin-right: 15px;
+    }
+    .ceo-img{
+        width: 105px;
+        height: 105px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        img{
+            width: 106px;
+            height: 106px;
+            border-radius: 50%;
+        }
+    }
+    .ceos-name{
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+    .ceos-management{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(0,0,0,.5);
+        line-height: normal;
+    }
+    .ceos-text{
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        line-height: 1.43;
+        margin-top: 15px;
+        p{
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .ceos-w{
+        margin-top: 15px;
+        padding: 25px 30px!important;
+        height: auto!important;
+    }
+    .ceos-text{
+        margin-top: 6px!important;
+    }
+}

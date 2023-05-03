@@ -1,0 +1,45 @@
+@import '../../variables/style.scss';
+
+.hr-benefits-container{
+    padding-top: 30px;
+    .hr-benefits{
+        text-align: center;
+        .benefits-box{
+            padding: 35px 45px;
+            height: 215px;
+            border-radius: 10px;
+            background-color: $main_color;
+            .benefit-icon{
+                font-size: 52px;
+                line-height: 52px;
+                margin-bottom: 15px;
+                font-size: 52px;
+                color: #fff;
+            }
+            .benefit-text{
+                font-size: 14px;
+                color: #fff;
+                line-height: 1.43;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .hr-benefits{
+        text-align: left!important;
+    }
+    .benefits-box{
+        padding: 25px 25px!important;
+        height: auto!important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .benefit-icon{
+            margin-bottom: 0!important;
+            font-size: 34px!important;
+            margin-right: 10px;
+        }
+    }
+}

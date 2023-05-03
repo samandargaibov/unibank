@@ -1,0 +1,289 @@
+@import '../../variables/style.scss';
+
+.chat{
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    will-change: width,height,transform,opacity;
+    backface-visibility: hidden;
+    padding: 0.5em 1.3em 1.8em 1em;
+    right: 0;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    .chat2{
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        .iconn{
+            display: flex;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 50%;
+            background: #FFFFFF;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin-left: auto;
+            position: relative;
+            color: #000000;
+            background-color: #ffffff;
+            button{
+                align-items: center;
+                display: flex;
+                border-radius: 6px;
+                padding: 0;
+                width: 100%;
+                color: inherit;
+                cursor: pointer;
+                background: transparent;
+                margin: 0;
+                border-color: transparent;
+                i{
+                    width: 54px;
+                    height: 20px;
+                    font-size: 22px;
+                    color: $main_color;
+                    transform: scale(1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.open-chat{
+    position: fixed;
+    inset: 361px 0px 0px auto;
+    width: auto;
+    height: 62%;
+    will-change: opacity;
+    backface-visibility: hidden;
+    padding: 1em;
+    .chat-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+        overflow: hidden;
+        isolation: isolate;
+        border-radius: 8px;
+        background: rgb(233, 238, 244);
+        .chat-header{
+            -webkit-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            border: rgb(0, 0, 0);
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            color: rgb(66, 77, 87);
+            font-size: 1em;
+            height: 60px;
+            flex-shrink: 0;
+            overflow: hidden;
+            -webkit-box-flex: 0;
+            flex-grow: 0;
+            text-align: left;
+            padding: 0px 1.3em;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            transition: background-color 0.3s ease 0s;
+            z-index: 2;
+            pointer-events: all;
+            font-weight: 700 !important;
+            .three-dots{
+                appearance: none;
+                background: transparent;
+                margin: 0px;
+                color: inherit;
+                cursor: pointer;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 6px;
+                padding: 0px;
+                height: 32px;
+                i{
+                    font-size: 24px;
+                }
+            }
+            .header-text{
+                width: 100%;
+                margin: 0px 0px 4px;
+                padding: 0px 2px;
+                text-align: center;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                font-size: 0.875rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                opacity: 1;
+            }
+            .close-chat{
+                appearance: none;
+                background: transparent;
+                margin: 0px;
+                color: inherit;
+                cursor: pointer;
+                padding: 0px;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 6px;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+        .chat-body{
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            height: 100%;
+            position: relative;
+            min-height: 0px;
+            z-index: 0;
+            .body-content{
+                padding: 2em 0.2em;
+                height: 100%;
+                outline-offset: -5px;
+                background: transparent;
+                overscroll-behavior: contain;
+                overflow-y: auto;
+                position: absolute;
+                inset: 0px;
+                .content-w{
+                    display: flex;
+                    margin-bottom: 1em;
+                    .chat-close-text{
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 6px;
+                        padding: 8px;
+                        margin: 16px 0px;
+                        width: 100%;
+                        max-width: 270px;
+                        position: relative;
+                        border: 0px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+                        left: 50%;
+                        right: auto;
+                        transform: translateX(-50%);
+                        .chat-logo{
+                            display: flex;
+                            flex-direction: row;
+                            position: absolute;
+                            top: -34px;
+                            left: 0px;
+                            right: 0px;
+                            color: rgb(255, 255, 255);
+                            i{
+                                display: flex;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                overflow: hidden;
+                                margin: 0px auto;
+                                border-radius: 50%;
+                                width: 42px;
+                                height: 42px;
+                                background-color: rgb(255, 107, 0);
+                            }
+                        }
+                        .form-chat{
+                            height: auto;
+                            padding: 8px;
+                            .form-inputs{
+                                display: flex;
+                                min-width: 0px;
+                                .form-display{
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    margin-bottom: 8px;
+                                    .form-text{
+                                        margin: 0px;
+                                        color: rgb(17, 17, 17);
+                                        font-size: 0.875rem;
+                                        font-weight: normal;
+                                        white-space: pre-line;
+                                        overflow-wrap: break-word;
+                                        word-break: break-word;
+                                        margin-bottom: 12px;
+                                    }
+                                    label{
+                                        width: 100%;
+                                        display: inline-block;
+                                        margin-bottom: 2px;
+                                        font-size: 0.875rem;
+                                        font-weight: normal;
+                                        color: rgb(17, 17, 17);
+                                        overflow-wrap: break-word;
+                                        word-break: break-word;
+                                    }
+                                    input{
+                                        width: 100%;
+                                        border: 1px solid rgb(117, 117, 117);
+                                        appearance: none;
+                                        background-color: rgb(248, 248, 248);
+                                        color: rgb(17, 17, 17);
+                                        font-family: inherit;
+                                        box-shadow: none;
+                                        transition: border-color 100ms linear 0s, background-color 100ms linear 0s;
+                                        border-radius: 6px;
+                                        font-size: 0.875rem;
+                                        font-weight: normal;
+                                        padding: 8px;
+                                        margin: 2px 0px;
+                                        &:focus{
+                                            outline: none;
+                                            border-color: rgb(255, 107, 0);
+                                            background-color: rgb(255, 255, 255);
+                                        }
+                                    }
+                                    button{
+                                        border: 0px;
+                                        font-family: inherit;
+                                        width: 100%;
+                                        max-width: 320px;
+                                        cursor: pointer;
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        justify-content: center;
+                                        -webkit-box-align: center;
+                                        align-items: center;
+                                        outline-offset: 2px;
+                                        border-radius: 6px;
+                                        font-size: 0.875rem;
+                                        font-weight: normal;
+                                        padding: 12px;
+                                        color: rgb(255, 255, 255);
+                                        background-color: rgb(255, 107, 0);
+                                        margin-top: 8px;
+                                        span{
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

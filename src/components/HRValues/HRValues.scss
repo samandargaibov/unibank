@@ -1,0 +1,43 @@
+@import '../../variables/style.scss';
+
+.hr-values-content{
+    margin-top: 50px;
+    h2{
+        color: $main_color;
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+    .hr-values{
+        //margin: 0 -18px;
+        .values-box{
+            .value-header{
+                line-height: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .value-desc{
+                font-weight: 400;
+                font-size: 14px;
+                color: #000;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    h2{
+        font-size: 20px!important;
+        margin-bottom: 20px!important;
+    }
+    .value-header{
+        margin-bottom: 5px!important;
+        font-size: 15px!important;
+    }
+    .value-desc{
+        font-size: 12px!important;
+    }
+}

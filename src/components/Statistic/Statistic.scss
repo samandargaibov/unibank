@@ -1,0 +1,72 @@
+@import '../../variables/style.scss';
+
+.statistic-box-g{
+    //padding: 0 15px;
+    .statistic-box{
+        padding: 40px 20px;
+        text-align: center;
+        background: $background_color;
+        border-radius: 10px;
+        .sb-general{
+            padding: 30px 0;
+            text-align: center;
+            .sb-head{
+                line-height: 18px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .sb-percent{
+                font-size: 52px;
+                font-weight: 700;
+                line-height: normal;
+                color: $main_color;
+                margin-bottom: 20px;
+                margin-top: 15px;
+            }
+            .sb-content{
+                line-height: 14px;
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: -20px;
+                margin-bottom: 45px;
+            }
+            .sb-btn{
+                a{
+                    line-height: 20px;
+                    font-weight: 700;
+                    background: $main_color;
+                    border-radius: 25px;
+                    color: #fff;
+                    padding: 15px 45px;
+                    box-shadow: 0 10px 10px -10px rgba(255,107,0,.51);
+                    display: inline-block;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .statistic-box{
+        padding: 40px 10px!important;
+        .sb-general{
+            padding: 0!important;
+            .sb-head{
+                font-size: 13px!important;
+            }
+            .sb-percent{
+                font-size: 30px!important;
+            }
+            .sb-content{
+                font-size: 10px!important;
+            }
+            .sb-btn{
+                a{
+                    padding: 10px 30px!important;
+                    font-size: 12px!important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import '../../variables/style.scss';
+
+.news{
+    padding: 0 0 30px;
+    .news-body{
+        margin: 0 -15px;
+        .news-box-w{
+            padding: 0 15px;
+            .news-box{
+                background: $background_color;
+                padding: 30px;
+                border-radius: 10px;
+                transition: .3s;
+                position: relative;
+                height: 100%;
+                cursor: pointer;
+                transition: .2s;
+                &:hover{
+                    background-color: $main_color;
+                    color: #fff;
+                    .n-header{
+                        color: #fff;
+                    }
+                    .n-date{
+                        color: #fff;
+                    }
+                }
+                .n-header{
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $main_color;
+                    text-decoration: none;
+                    display: block;
+                    overflow: hidden;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                    height: 50px;
+                }
+                .n-content{
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 23px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 7;
+                    -webkit-box-orient: vertical;
+                }
+                .n-date{
+                    line-height: 12px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(50,50,50,.5);
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .news-btn{
+        margin-top: 25px;
+        text-align: center;
+        a{
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 25px;
+            background: $main_color;
+            color: #fff;
+            padding: 17px 25px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .n-header{
+        font-size: 14px!important;
+    }
+}

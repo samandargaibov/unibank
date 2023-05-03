@@ -1,0 +1,29 @@
+@import '../../variables/style.scss';
+
+.videobar{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    .videobar-overlay{
+        background-image: url('https://unibank.az/uploads/menus/o_1cnj0q0r11k96193k1rgp1tp1icca.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+        display: table;
+        .videobar-w{
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            cursor: pointer;
+            .videobar-icon{
+                i{
+                    font-size: 55px;
+                    line-height: 65px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

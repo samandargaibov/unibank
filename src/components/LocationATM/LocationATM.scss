@@ -1,0 +1,127 @@
+@import '../../variables/style.scss';
+
+.loc-w{
+    margin: 0 -15px;
+}
+.location-general{
+    padding: 0 15px;
+    .location-box{
+        height: 320px;
+        padding: 45px 65px;
+        position: relative;
+        overflow: hidden;
+        background: $background_color;
+        border-radius: 10px;
+        .location-img{
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            overflow: hidden;
+            img{
+                height: 250px;
+            }
+        }
+    }
+}
+
+.location-questions-general{
+    padding: 0 15px;
+    .location-questions{
+        height: 320px;
+        padding: 45px 30px;
+        position: relative;
+        background: $background_color;
+        border-radius: 10px;
+        .loc-questions-img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+            img{
+                height: 250px;
+                border: 0;
+            }
+        }
+    }
+}
+.loc-h2{
+    font-size: 28px;
+    line-height: normal;
+    margin-top: 0;
+    color: $main_color;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.loc-p{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    width: 70%;
+    line-height: 20px;
+}
+.loc-btn{
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 40px;
+    background: $main_color;
+    border-radius: 25px;
+    color: #fff;
+    margin-top: 23px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .loc-btn-res{
+        margin-top: -8px!important;
+    }
+}
+@media (min-width: 577px) and (max-width: 991px){
+    .location-questions{
+        height: 270px!important;
+    }
+    .location-img{
+        img{
+            height: 170px!important;
+        }
+    }
+    .loc-w{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .location-general{
+        padding: 0!important;
+    }
+    .location-questions-general{
+        padding: 0!important;
+    }
+}
+@media (max-width: 576px){
+    .location-box{
+        height: 270px!important;
+        padding: 24px 30px!important;
+    }
+    .location-img{
+        img{
+            height: 130px!important;
+        }
+    }
+    .location-questions{
+        height: 270px!important;
+        padding: 24px 30px!important;
+    }
+    .loc-btn-res{
+        margin-top: 0px!important;
+    }
+    .loc-w{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .location-general{
+        padding: 0!important;
+    }
+    .location-questions-general{
+        padding: 0!important;
+    }
+}
+
+

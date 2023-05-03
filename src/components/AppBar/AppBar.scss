@@ -1,0 +1,173 @@
+@import '../../variables/style.scss';
+
+//common properties for app-logos
+.appbar-logo-app{
+    width: 135px;
+    height: 40px;
+    background-position: center!important;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.appbar{
+    padding: 35px 0 0;
+    position: relative;
+    .appbar_wrapper{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        background: $background_color;
+        .appbar-left{
+            height: 400px;
+            position: relative;
+            margin-top: 20px;
+            img{
+                position: absolute;
+                height: 505px;
+                top: -105px;
+                left: -26px;
+            }
+        }
+        .appbar-right{
+            padding-right: 20px;
+            padding-left: 40px;
+            
+            .appbar_header{
+                line-height: 28px;
+                font-weight: 800;
+                font-size: 28px;
+                color: $main_color;
+                margin: 0 0 20px;
+            }
+            .ar-desc{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.43;
+                margin-bottom: 40px;
+                padding-right: 45px;
+            }
+            .ar-links{
+                margin-bottom: 30px;
+                a{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .app-google-play{
+                    @extend .appbar-logo-app;
+                    background-image: url('https://unibank.az/assets/images/playstore.svg');
+                }
+                .app-apple-store{
+                    @extend .appbar-logo-app;
+                    background-image: url('https://unibank.az/assets/images/appstore.svg');
+                }
+                .app-gallery-store{
+                    @extend .appbar-logo-app;
+                    background-image: url('https://unibank.az/assets/images/app-gallery.svg');
+                }
+            }
+            .ar-extras{
+                a{
+                    padding: 16px 25px;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    border-radius: 25px;
+                    box-sizing: border-box;
+                    display: inline-flex;   
+                    border: 1px solid rgba(0,0,0,.1);
+                    color: #969696;
+                    box-shadow: none;     
+                    &:first-child{
+                        background-color: $main_color;
+                        color: #fff;
+                    }
+                }
+            }
+            .ubank-btn{
+                padding: 15px 45px!important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .appbar-left{
+        img{
+            left: -95px!important;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .appbar-left{
+        img{
+            left: 0!important;
+        }
+    }
+    .appbar-phone{
+        img{
+            left: 90px!important;
+        }
+    }
+    .appbar-right{
+        padding-bottom: 10px;
+        padding-left: 20px!important;
+        width: auto;
+        float: none;
+        padding-right: 20px;
+        margin-top: 20px;   
+        .ar-extras-v{
+            display: none!important;
+        }
+        .ar-extras-mobile{
+            display: inline!important;
+            .ar-extras-btn-btm{
+                display: flex;
+                text-align: center!important;
+                a{
+                    width: 100%;
+                    display: block!important;
+                    &:first-child{
+                        background-color: transparent!important;
+                        color: #969696!important;
+                    }
+                }
+            }
+            .ar-extras-btn{
+                text-align: center!important;
+                padding-bottom: 10px;
+                a{
+                    display: block!important;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 767px){
+    // .container{
+    //     margin-right: auto;
+    //     margin-left: auto;
+    //     padding-left: 18px;
+    //     padding-right: 18px;
+    // }
+    .appbar-left{
+        height: 280px!important;
+        img{
+            left: -70px!important;
+            height: 400px!important;
+        }
+    }
+    .appbar-phone{
+        height: 289px!important;
+        img{
+            left: 0px!important;
+            height: 360px!important;
+            top: -71px!important;
+        }
+    }
+}

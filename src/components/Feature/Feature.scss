@@ -1,0 +1,105 @@
+@import '../../variables/style.scss';
+
+.content-padding{
+    padding-top: 35px;
+    .feature-mr{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        position: relative;
+        .feature-box{
+            height: 410px;
+            margin-bottom: 30px;
+            padding: 0 15px;
+            cursor: pointer;
+            .feature{
+                background: $background_color;
+                border-radius: 10px;
+                padding: 45px 50px;
+                position: relative;
+                height: 100%;
+                transition: all .2s linear;
+                &:hover{
+                    background-color: $main_color;
+                }
+                &:hover div{
+                    color: #fff!important;
+                }
+                &:hover .feature-icon{
+                    background-color:#fff!important;
+                }
+                .feature-wrapper{
+                    text-align: center;
+                    .feature-icon{
+                        margin-bottom: 10px;
+                        width: 75px;
+                        height: 75px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                    .feature-body{
+                        .feature-head{
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #000;
+                            line-height: normal;
+                            margin-bottom: 10px;
+                            margin-top: 20px;
+                        }
+                        .feature-desc{
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: rgba(0,0,0,.8);
+                            line-height: normal;
+                            margin-bottom: 20px;
+                            text-align: center;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .feature-box{
+        height: auto!important;
+        margin-bottom: 0!important;
+    }
+    .feature{
+        height: auto!important;
+        padding: 15px 40px!important;
+        .feature-wrapper{
+            display: flex;
+            align-items: center;
+            text-align: start!important;
+            .feature-icon{
+                margin-right: 15px;
+                margin-bottom: 0!important;
+                width: 45px!important;
+                height: 45px!important;
+            }
+            .feature-head{
+                margin-bottom: 2px!important;
+                font-size: 17px!important;
+            }
+            .feature-desc{
+                text-align: start!important;
+            }
+        }
+    }
+}
+@media (max-width: 567px){
+    .feature{
+        padding: 11px 15px !important;
+        .feature-desc{
+            font-size: 12px!important;
+        }
+        .feature-head{
+            font-size: 15px!important;
+        }
+    }
+    
+}

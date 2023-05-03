@@ -1,0 +1,47 @@
+@import '../../variables/style.scss';
+
+// body{
+//     background-image: url('https://online.unibank.az/ibank/resources/imgs/icons/bg-login.png');
+//     background-size: cover;
+//     background-attachment: fixed;
+//     color: #3f3f3f;
+//     letter-spacing: 0;
+//     height: 880px;
+// }
+
+.form-header{
+    width: 1035px;
+    margin: 3% auto;
+    .form-header-wrapper{
+        box-sizing: content-box;
+        margin: 0 15px;
+        .header{
+            padding-bottom: 5px;
+            font-size: 14px;
+            margin-top: 68px;
+            color: #fff;
+            width: 1058px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .langs{
+                display: flex;
+                align-items: center;
+                color: black;
+                cursor: pointer;
+                font-size: 13px;
+                .mr-left{
+                    margin-left: 10px;
+                    transition: .7s;
+                    font-weight: 400;
+                    padding: 4px;
+                    border-radius: 2px;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

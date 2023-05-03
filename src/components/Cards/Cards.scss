@@ -1,0 +1,261 @@
+@import '../../variables/style.scss';
+
+.tr-btn{
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    background: $main_color;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px -10px rgba(255,107,0,.51);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cc-content{
+    margin-top: 0;
+}
+.common-cards{
+    border-radius: 10px;
+    position: relative;
+    .content-wrapper{
+        p{
+            margin-bottom: 30px;
+            color: $main_color;
+            font-weight: 800;
+            margin-top: 0;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .main-card{
+            background: $background_color;
+            border-radius: 10px;
+            padding: 50px 65px;
+            margin-top: 30px;
+            .mc-img{
+                position: relative;
+                min-height: 1px;
+                padding: 0;
+                text-align: center;
+                img{
+                    width: 315px;
+                    box-shadow: -15px 15px 30px 0 rgba(0,0,0,.24);
+                    padding: 0;
+                    border-radius: 15px;
+                    max-width: 100%;
+                    border: 0;
+                }
+            }
+            .mc-text{
+                position: relative;
+                min-height: 1px;
+                padding-left: 18px;
+                padding-right: 0;
+                .mc-text-header{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    justify-content: space-between;
+                    .mc-text-left{
+                        font-weight: 800;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #000;
+                    }
+                    .mc-text-right{
+                        a{
+                            
+                        }
+                    }
+                    
+                }
+            }
+            .mc-text-desc{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                color: #000;
+                margin-bottom: 25px;
+            }
+            .mc-text-bottom{
+                .txt_btm{
+                    align-items: center;
+                    padding: 0;
+                    display: flex;
+                }
+                .icon{
+                    font-family: icomoon!important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-variant: normal;
+                    text-transform: none;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    font-size: .9em;
+                }
+                span{
+                    font-size: 35px;
+                    line-height: 65px;
+                    margin-right: 10px;
+                    background-position: center;
+                    background-size: cover;
+                    height: 35px;
+                    width: 35px;
+                }
+                .icon1{
+                    background-image: url('../../img/1.PNG');
+                }
+                .icon2{
+                    background-image: url('../../img/2.PNG');
+                }
+                .icon3{
+                    background-image: url('../../img/3.PNG');
+                }
+                .mc-text-value{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: normal;
+                    color: #000;
+                    text-align: left;
+                }
+            }
+        }
+        .cards-header{
+            margin-top: 55px;
+        }
+        .debet-cards{
+            .debet-card-box-w{
+            margin: 0 -15px;
+            }
+        }
+        .debet-cards-w{
+            padding: 0 15px;
+            .debet-card-box{
+                padding: 45px 65px;
+                border-radius: 10px;
+                background: $background_color;
+                margin-top: 30px;
+                .debet-card{
+                    img{
+                        width: 315px;
+                        border-radius: 15px;
+                    }
+                    .debet-card-text{
+                        width: 100%;
+                        margin-top: 40px;
+                        .ct-head{
+                            font-weight: 800;
+                            font-size: 24px;
+                            line-height: normal;
+                            margin-bottom: 10px;
+                            color: #000;
+                        }
+                        .ct-desc{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
+                            height: 75px;
+                            color: #000
+                        }
+                        .ct-price{
+                            margin-bottom: 16px;
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                        .ct-btn{
+                            @extend .mc-text-right;
+                            .btn-partner{
+                                background-color: transparent;
+                                border: 1px solid rgba(0,0,0,.1);
+                                color: #969696;
+                                margin-left: 10px;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mc-text-right{
+    a{
+        @extend .tr-btn;
+        span{
+            margin-left: 10px;
+            line-height: 19px;
+        }
+    }
+}
+.mc-text-hidden-desktop{
+    display: none;
+}
+
+@media (max-width: 992px){
+    .mc-text-header{
+        flex-direction: column;
+        align-items: center!important;
+        margin-top: 20px;
+        .mc-text-left{
+            font-size: 20px!important;
+        }
+        .mc-text-right{
+            display: none;
+        }
+        
+    }
+    .mc-text-desc{
+        text-align: center;
+        font-size: 12px!important
+    }
+    .mc-text{
+        text-align: center;
+    }
+    .mc-text-bottom{
+        margin-bottom: 15px;
+        span{
+            height: 27px!important;
+            width: 27px!important;
+            margin-right: 0!important;
+            margin-bottom: 5px;
+        }
+        .txt_btm{
+            flex-direction: column;
+        }
+        .mc-text-value{
+            font-size: 11px!important;
+            text-align: center!important;
+        }
+    }
+    .mc-text-hidden-desktop{
+        display: inline!important;
+    }
+
+}
+@media (max-width: 567px){
+    .mc-text{
+        padding-left: 0!important;
+    }
+    .debet-card{
+        img{
+            width: auto!important;
+            max-width: 100%!important;
+        }
+    }
+    .ct-desc{
+        margin-bottom: 70px!important;
+    }
+    .ct-btn{
+        text-align: center;
+        a{
+            font-size: 13px!important;
+        }
+    }
+    .debet-card-box{
+        padding: 25px 40px!important;
+    }
+}
