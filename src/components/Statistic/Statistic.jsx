@@ -9,7 +9,7 @@ const Statistic = () => {
                 <div className="row g-3">
                     {
                         statistic.map((item,id) => (
-                            <div className="statistic-box-g col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div key={id} className="statistic-box-g col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div className="statistic-box">
                                     <div className="sb-general">
                                         <div className="sb-head">
@@ -22,7 +22,7 @@ const Statistic = () => {
                                             {item.content}
                                         </div>
                                         <div className="sb-btn">
-                                            <a href="">{item.button}</a>
+                                            <a href="#">{item.button}</a>
                                         </div>
                                     </div>
                                 </div>

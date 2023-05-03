@@ -37,13 +37,7 @@ const HeaderMobile = () => {
         else{
             document.body.classList.remove('for-mobile-body')
         }
-        
     }
-
-    
-       
-        
-    
 
     return (
         <div className='topbar-mobile d-none'>

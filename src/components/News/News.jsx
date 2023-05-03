@@ -33,7 +33,7 @@ const News = () => {
                         }
                     </div>
                     <div className="news-btn">
-                        <a href="">Bütün xəbərlər</a>
+                        <a href="#">Bütün xəbərlər</a>
                     </div>
                 </div>
             </div>

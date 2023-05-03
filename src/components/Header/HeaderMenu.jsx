@@ -12,19 +12,19 @@ const HeaderMenu = () => {
                             <a href="/cards">Kartlar</a>
                         </div>
                         <div className="menubar-menu">
-                            <a href="">Kreditlər</a>
+                            <a href="#">Kreditlər</a>
                         </div>
                         <div className="menubar-menu">
-                            <a href="">Əmanətlər</a>
+                            <a href="#">Əmanətlər</a>
                         </div>
                         <div className="menubar-menu">
-                            <a href="">Köçürmələr</a>
+                            <a href="#">Köçürmələr</a>
                         </div>
                         <div className="menubar-menu">
-                            <a href="">Rəqəmsal bankçılıq</a>
+                            <a href="#">Rəqəmsal bankçılıq</a>
                         </div>
                         <div className="menubar-menu">
-                            <a href="">Əlavə xidmətlər</a>
+                            <a href="#">Əlavə xidmətlər</a>
                         </div>
                     </div>
                     <div className="menu-right">

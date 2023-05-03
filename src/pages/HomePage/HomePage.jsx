@@ -6,7 +6,6 @@ import News from "../../components/News/News";
 import LocationATM from "../../components/LocationATM/LocationATM";
 import Appbar from "../../components/AppBar/AppBar";
 import OnlineChat from "../../components/OnlineChat/OnlineChat";
-import DarkMode from "../../DarkMode";
 
 const HomePage = () => {
     return (

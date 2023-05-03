@@ -20,7 +20,7 @@ const FormContent = () => {
         
     };
 
-    const clickAsan = (e) => {
+    const clickAsan = () => {
         setIsFin(false);
         setIsBtnClick(false)
     }
@@ -168,7 +168,6 @@ const FormContent = () => {
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
                 </form>
             </div>

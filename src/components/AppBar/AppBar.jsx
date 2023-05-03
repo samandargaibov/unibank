@@ -20,18 +20,18 @@ const Appbar = () => {
                             </div>
                             <div className="ar-extras">
                                 <div className="ar-extras-v">
-                                <a href="">Ətraflı</a>
-                                <a href="">Partnyorlar</a>
-                                <a href="">Şəxsi kabinet</a>
+                                <a href="#">Ətraflı</a>
+                                <a href="#">Partnyorlar</a>
+                                <a href="#">Şəxsi kabinet</a>
                                 </div>
                             </div>
                             <div className="ar-extras ar-extras-mobile d-none">
                             <div className="ar-extras-btn">
-                                    <a href="">Ətraflı</a>
+                                    <a href="#">Ətraflı</a>
                                 </div>
                                 <div className="ar-extras-btn-btm">
-                                    <a href="">Partnyorlar</a>
-                                    <a href="">Şəxsi kabinet</a>
+                                    <a href="#">Partnyorlar</a>
+                                    <a href="#">Şəxsi kabinet</a>
                                 </div>
                             </div>
                         </div>

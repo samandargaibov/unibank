@@ -1,11 +1,7 @@
 import React from "react";
 import './SearchModal.scss';
-import { useState } from "react";
 
 const SearchModal = ({setIsSearch, isSearch}) => {
-
- 
-
     return (
         <>
         {

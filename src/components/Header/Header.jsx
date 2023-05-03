@@ -22,26 +22,6 @@ function Header() {
         }
     }
 
-    // console.log(theme);
-    // console.log("isSearch", isSearch)
-
-    // function activeSearch () {
-    //     setIsSearch(!isSearch);
-    // }
-    // console.log(isSearch);
-
-    // const buttonClickHandler = (e) => {
-    //     if(e.currentTarget.classList.contains('searchmodal-wrapper')){
-    //         e.currentTarget.classList.remove('d-none');
-    //         // e.currentTarget.classList.add('dark');
-    //     }
-    //     else{
-    //         e.currentTarget.classList.add('d-none');
-    //     }
-        
-    // };
-
-
     return(
         <header className='header'>
             <div id={theme} className="header_top">

@@ -4,6 +4,9 @@ import axios from "axios";
 
 
 const Exchange = () => {
+    const current = new Date();
+    const date = `${(current.getDate()).toString().padStart(2,0)}.${(current.getMonth()+1).toString().padStart(2,0)}.${current.getFullYear()}`;
+
     const [curUsd,setCurUsd]= useState([])
     const [curEur,setCurEur]= useState([])
     const [curRub,setCurRub]= useState([])
@@ -104,11 +107,6 @@ const Exchange = () => {
         getRatesGBP();
     },[])
 
-    
-
-    const current = new Date();
-    const date = `${(current.getDate()).toString().padStart(2,0)}.${(current.getMonth()+1).toString().padStart(2,0)}.${current.getFullYear()}`;
-    
     return(
         <div className="exchange">
             <div className="container">

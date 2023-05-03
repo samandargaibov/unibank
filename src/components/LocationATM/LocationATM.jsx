@@ -30,7 +30,6 @@ const LocationATM = () =>{
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
