@@ -63,8 +63,7 @@ const Basket = () => {
                                 <td>{item.price} <i className="fa-solid fa-manat-sign"></i></td>
                                 <td className="font-weight-bold">{item.price} <i className="fa-solid fa-manat-sign"></i></td>
                             </tr>
-                            ))
-                            }
+                            ))}
                         </tbody>
                     </table>
                 </div>

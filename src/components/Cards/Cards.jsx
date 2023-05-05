@@ -6,7 +6,7 @@ import {cardTypes,otherCards} from "../../../src/mockApi/mockApi"
 const Cards = () => {
     const [cards,setCards]= useState([])
 
-    const url = 'http://localhost:3001/debetCards'
+    const url = 'https://unibank.vercel.app/debetCards'
 
     useEffect(() => {
         fetch(url)
